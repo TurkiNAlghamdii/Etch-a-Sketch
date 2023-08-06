@@ -1,0 +1,94 @@
+html, body{
+    height : 100%;
+    background-color: #2D4356;
+    color: #A76F6F;
+    font-weight: bold;
+}
+
+:root{
+    --grid-cols: 1;
+    --grid-rows: 1;
+}
+
+#container{
+    margin-top: 100px;
+    height: 10%;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+    
+}
+
+.cells{
+    border: 1px solid #A76F6F ;  
+    
+    padding:10px;
+    text-align: center;
+}
+
+.hoverOver{
+    background: #435B66;
+    color: aqua;
+}
+.outsideDiv{
+    /* display: block; */
+    height: 100px;
+    display: flex;
+    /* border:1px solid black; */
+    min-width: 100% !important;
+    margin: 0 auto;
+    margin-top: -200px;
+}
+button{
+    flex: 1;
+    flex-grow: 1;
+    max-width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    justify-self: center;
+    margin: auto;
+    align-self: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------- */
+
+
+
+/* :root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+  }
+  
+  #container {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+  }
+  
+  .grid-item {
+    padding: 1em;
+    border: 1px solid #ddd;
+    text-align: center;
+  } */
